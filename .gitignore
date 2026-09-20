@@ -1,0 +1,36 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+.env
+*.env
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── ML artifacts (large binaries — regenerate with train.py) ─────────────────
+backend/models/*.joblib
+backend/models/*.pkl
+
+# ── OS / Editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.swp
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

@@ -1,0 +1,37 @@
+# ── Core web framework ──────────────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20        # required for FastAPI form/file uploads
+
+# ── Database ─────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.36
+pymysql==1.1.1
+cryptography==44.0.0            # PyMySQL optional dependency for auth plugins
+
+# ── Data validation ──────────────────────────────────────────────────────────
+pydantic>=2.11
+pydantic-settings>=2.7
+
+# ── Config ───────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── ML / Data ────────────────────────────────────────────────────────────────
+pandas
+numpy
+scikit-learn
+xgboost
+joblib
+openpyxl                        # read .xlsx files
+matplotlib
+seaborn
+
+# ── Rate limiting (optional, Phase 6) ────────────────────────────────────────
+slowapi==0.1.9
+
+# ── Security / Auth (optional, Phase 7) ──────────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.4
+httpx==0.28.1                   # async test client for FastAPI
